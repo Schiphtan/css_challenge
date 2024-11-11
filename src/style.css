@@ -3,20 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+nav {
+    margin: 0px 200px;
+}
 nav ul {
     display: flex;
     width: 100%;
+    padding: 30px;
     list-style: none;
     font-weight: 500;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap:20px;
     text-transform: capitalize;
 }
 
 nav ul .header-logo{
-    margin-right: auto;
+    flex-grow: 1;
 }
 
 nav ul li{
