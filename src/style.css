@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
 }
 nav {
-    margin: 0px 200px;
+    margin: 0px auto;
+    padding: 0 5%;
+    max-width: 1200px;
 }
 nav ul {
     display: flex;
@@ -14,25 +17,39 @@ nav ul {
     font-weight: 500;
     align-items: center;
     justify-content: space-between;
-    gap:20px;
     text-transform: capitalize;
 }
 
 nav ul .header-logo{
     flex-grow: 1;
+    margin-right: auto;
+    padding: 10px;
+
 }
 
 nav ul li{
     text-decoration: none;
+    color: rgb(29,32,60);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
 }
 
 nav ul .download-button{
-    display: block;
-    width: 150px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 45px;
+    
+}
+
+nav ul .download-button:hover{
+    background-color: rgb(228, 250, 255);
 }
 
 nav ul .download-button .icon{
     width: 16px;
-    float: left;
     margin-right: 3px;
 }
